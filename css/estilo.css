@@ -1,0 +1,94 @@
+body{
+    font-family: Verdana;
+    line-height: 1.6;
+    background: #5cdb95;
+        /* altura da linha, o espaçamento entre as linhas */
+}
+
+.container{
+    margin: 0 auto;
+    width: 960px;
+}
+
+.lugar{
+    /* Seletor que faz as caixas */
+    border: 1px solid #ccc;
+    border-color: #ccc #999 #999 #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: white;
+    
+}
+
+.lugar h2{
+    /* seletor, pega só o h2 que está dentro do lugar */
+    border-bottom: 1px dashed #05386b;
+    margin: 0;
+}
+
+.lugar a{
+    /* seletor, pega só os links dentro do lugar */
+    color: #05386b;
+    font-weight: bold;
+}
+h1 a{
+    color: #edf5e1;
+    text-decoration: none;
+}
+
+h1 a:hover{
+    /* pseudo-seletor (hover) tudo que esta dentro do hover tem uma interação ao passar o mouse, no caso troca as cores para destacar (do fundo e da cor da fonte)*/
+    background: #edf5e1;
+    color: #5cdb95;
+}
+/* pseudo-seletores: */
+/* visited{} link que já foi visitado*/
+/* active{} link que está clicado */
+/* focus{} link que esta em foco do teclado */
+
+.lugar img{
+    border: 1px solid #05386b;
+    /* border-radius: 20px;
+    arredonda a borda*/
+    margin: 10px 10px 0 0;
+    padding: 2px;
+    filter: grayscale();
+    /* deixa o filtro da imagem em preto em branco */
+    float: left;
+}
+
+.lugar img:hover{
+    filter: grayscale(0);
+    /* tira greyscale (preto e branco) e volta a ser colorida */
+}
+
+.clear{
+    clear: both;
+}
+
+.lugares{
+    width: 660px;
+    float: left;
+}
+
+.lateral{
+    background: #8ee4af;
+    border: 1px solid #379683;
+    padding: 10px;
+    width: 260px;
+    float: right;
+}
+
+.lateral h3{
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.lateral ol{
+    font-size: 12px;
+}
+
+.rodape{
+    font-size: 12px;
+    text-align: center;
+}
